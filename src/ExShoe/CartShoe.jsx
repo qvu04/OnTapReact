@@ -35,6 +35,7 @@ export default function CartShoe({ cart, deleteCart }) {
                     </tr>
                 </thead>
                 <tbody>{renderCart()}</tbody>
+                {cart.length == 0 && <p className='text-red-500 font-bold'>No item in cart</p>}
             </table>
         </div>
     )
